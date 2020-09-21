@@ -16,7 +16,7 @@ Using a Raspberrt Pi to control a lightbulb as the foundation of a home control 
 
 ### Wireframes!
 
-![Wireframe](./resources/final_wireframe.png)
+![INIT_DIAG](./assets/initialdiagram.jpg)
 
 ### User Stories
 
