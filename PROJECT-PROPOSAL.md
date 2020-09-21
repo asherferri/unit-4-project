@@ -2,9 +2,11 @@
 
 (DISCLAIMER : the following information is subject to change based on developing phases and dev. brain capacity. )
 
-# App=Name
+# The switch
 
-"The Switch"
+Yes, tentatively called the switch!!! "The Switch"
+
+To make it more elegant could also be called "Thy Switch"
 
 ## The App
 
