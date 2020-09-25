@@ -42,7 +42,7 @@ Project Description
   - Show
   - Edit
   - Delete
-  - Stretch goals
+  - Stretch goals :)
 
 ### Links and Resources
 
