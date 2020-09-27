@@ -61,10 +61,10 @@
         }
 
         let socketA = io.connect(); 
-        gpioON3 = () => {
+        gpioONA = () => {
             socketA.emit("state", 1); 
         }
-        gpioOFF3 = () => {
+        gpioOFFA = () => {
             socketA.emit("state", 0); 
         }
     </script>
