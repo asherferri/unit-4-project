@@ -2,7 +2,8 @@
 
 # The Switch \m/
 
-Link: http://100.2.48.51:7777 
+Link: http://100.2.48.51:7777
+
 LiveFeed: https://video.nest.com/live/BH05CiWH6k (There's a 12-24 secs. lag, pls be patient)
 
 (DISCLAIMER : the following information is subject to change based on developing phases and dev. brain capacity. )
