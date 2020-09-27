@@ -11,19 +11,25 @@
 <body>
     <h1>OUTPUT GPIO 18</h2>
     <div class="button-container">
-        <button type="button" class="on" id="pwm18" onclick="gpioON()">ON</button>
-        <button type="button" class="off" id="pwm18" onclick="gpioOFF()">OFF</button>
+        <button type="button" class="on" id="pwm18" id="state" onclick="gpioON()">ON</button>
+        <button type="button" class="off" id="pwm18" id="state" onclick="gpioOFF()">OFF</button>
     </div>
     <h1>OUTPUT GPIO 14</h2>
         <div class="button-container">
-            <button type="button" class="on" id="pwm14" onclick="gpioON2()">ON</button>
-            <button type="button" class="off" id="pwm14" onclick="gpioOFF2()">OFF</button>
+            <button type="button" class="on" id="pwm14" id="state" onclick="gpioON2()">ON</button>
+            <button type="button" class="off" id="pwm14" id="state" onclick="gpioOFF2()">OFF</button>
         </div>
         <h1>OUTPUT GPIO 7</h2>
             <div class="button-container">
                 <button type="button" class="on" id="pwm7" onclick="gpioON3()">ON</button>
                 <button type="button" class="off" id="pwm7" onclick="gpioOFF3()">OFF</button>
             </div>
+
+            <h1>OUTPUT GPIO 2</h2>
+                <div class="button-container">
+                    <button type="button" class="on" id="state" onclick="gpioONA()">ON</button>
+                    <button type="button" class="off" id="state" onclick="gpioOFFA()">OFF</button>
+                </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
     <script>
         //Loads socket.io client and connects to the host \m/
@@ -52,6 +58,14 @@
         }
         gpioOFF3 = () => {
             socket3.emit("pwm7", 0); 
+        }
+
+        let socketA = io.connect(); 
+        gpioON3 = () => {
+            socketA.emit("state", 1); 
+        }
+        gpioOFF3 = () => {
+            socketA.emit("state", 0); 
         }
     </script>
 
