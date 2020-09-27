@@ -71,3 +71,14 @@ io.sockets.on('connection', (socket3) => {// WebSocket Connection
     }
   })
 })
+
+io.sockets.on('connection', (socketA) => {// WebSocketA Connection
+    let buttonState = 0 //variable to store button state
+  
+    socketA.on('state', (data) => { //get button state from client
+      buttonState = data
+      if (buttonState != GPIOpin1.readSync()) { //Change LED state if button state is changed
+        GPIOpin1.writeSync(buttonState) //turn LED on or off
+      }
+    })
+  })
