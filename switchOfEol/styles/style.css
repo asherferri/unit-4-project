@@ -65,6 +65,17 @@ h2 {
   color: white;
 }
 
+p {
+  margin: 1vh;
+  text-align: center;
+  border-radius: 1vw;
+  padding: 1vw;
+  font-size: 1em;
+  background: rgba(0, 0, 0, 0.2);
+  transition: box-shadow .5s;
+  color: white;
+}
+
 .button-container {
     align-content: center;
 }
