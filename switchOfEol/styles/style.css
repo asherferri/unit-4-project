@@ -44,7 +44,7 @@ h2 {
   text-align: center;
   border-radius: 1vw;
   padding: 1vw;
-  font-size: 1vw;
+  font-size: 2vw;
   background: rgba(0, 0, 0, 0.1);
   transition: box-shadow .5s;
   color: white;
@@ -84,3 +84,27 @@ button.off:hover{
   background: red;
 }
 
+footer {
+  display: flex;
+  height: 7vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  /* background-color: lightcoral; */
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* uncoment next line in case color bar needed */
+  /* background-color: rgba(132, 204, 198, 0.9); */
+}
+
+.footer-text {
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-weight: 500;
+  cursor: pointer;
+  transition: font-size 2s;
+}
+.footer-text:hover {
+  font-size: 2vw;
+}
