@@ -1,0 +1,19 @@
+{
+    "name": "gpio_test",
+    "version": "1.0.0",
+    "main": "webserver.js",
+    "dependencies": {
+      "onoff": "^6.0.0",
+      "socket.io": "^2.3.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node switch.js",
+      "switch": "nodemon switch.js"
+    },
+    "author": "Ashr \\m/",
+    "license": "ISC",
+    "description": "this is Eöl's switch, away from all, one switch to rule it all...or kaputs it all..."
+  }
+  
