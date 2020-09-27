@@ -7,6 +7,7 @@
 	<title>First Test trial</title>
     <link rel='stylesheet' type='text/css' href='https://asherferri.github.io/unit-4-project/switchOfEol/styles/reset.css'>
     <link rel='stylesheet' type='text/css' href='https://asherferri.github.io/unit-4-project/switchOfEol/styles/style.css'>
+    <link rel='stylesheet' type='text/css' href='./styles/style.css'>
 </head>
 <body>
     <h1>OUTPUT GPIO 18</h2>
@@ -24,6 +25,10 @@
                 <button type="button" class="on" id="pwm7" onclick="gpioON3()">ON</button>
                 <button type="button" class="off" id="pwm7" onclick="gpioOFF3()">OFF</button>
             </div>
+
+            <label class="switch">
+                <input class="switch-input" type="checkbox" id="pwm18" onclick="gpioON()" />
+                <span class="switch-label" data-on="On" data-off="Off"></span> <span class="switch-handle"></span> </label>
 
             <!-- <h1>OUTPUT GPIO A</h2>
                 <div class="button-container">
