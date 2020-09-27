@@ -4,20 +4,21 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-
-}
-
-.remote-container{
-  margin: 7vw;
-  border: 1px solid rgb(255, 255, 255);
-  background: rgba(140, 134, 134, 1);
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 1px 1px 7px black;
-  max-width: 50vw;
+    justify-content: center;
+    
+  }
+  
+  .remote-container{
+    margin: 7vw;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(140, 134, 134, 1);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 7px black;
+    max-width: 50vw;
 }
 
 h1 {
