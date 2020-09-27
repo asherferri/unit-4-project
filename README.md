@@ -2,7 +2,7 @@
 
 # The Switch \m/
 
-Link: http://100.2.48.51:7777
+Link: http://100.2.48.51:7777 LiveFeed Window added next to Remote.
 
 LiveFeed: https://video.nest.com/live/BH05CiWH6k (There's a 12-24 secs. lag, pls be patient)
 
