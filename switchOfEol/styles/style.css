@@ -4,12 +4,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    max-width: 500px;
 }
 
 .remote-container{
   margin: 7vw;
-  border: 1px solid white;
+  border: 1px solid rgb(213, 25, 25);
   background: rgba(140, 134, 134, 1);
   border-radius: 10px;
   padding: 10px;
@@ -80,3 +79,4 @@ button.off {
 button.off:hover{
   background: red;
 }
+
