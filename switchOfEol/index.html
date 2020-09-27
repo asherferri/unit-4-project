@@ -10,80 +10,70 @@
     <link rel='stylesheet' type='text/css' href='./styles/style.css'>
 </head>
 <body>
-    <h1>OUTPUT GPIO 18</h2>
-    <div class="button-container">
-        <button type="button" class="on" id="pwm18" onclick="gpioON()">ON</button>
-        <button type="button" class="off" id="pwm18" onclick="gpioOFF()">OFF</button>
-    </div>
-    <h1>OUTPUT GPIO 14</h2>
-        <div class="button-container">
-            <button type="button" class="on" id="pwm14" onclick="gpioON2()">ON</button>
-            <button type="button" class="off" id="pwm14" onclick="gpioOFF2()">OFF</button>
-        </div>
-        <h1>OUTPUT GPIO 7</h2>
+
+    <div class="remote-container">
+        <h1>THE SWITCH</h1>
+        <h2>OUTPUT GPIO 18</h2>
+            <div class="button-container">
+                <button type="button" class="on" id="pwm18" onclick="gpioON()">ON</button>
+                <button type="button" class="off" id="pwm18" onclick="gpioOFF()">OFF</button>
+            </div>
+        <h2>OUTPUT GPIO 14</h2>
+            <div class="button-container">
+                <button type="button" class="on" id="pwm14" onclick="gpioON2()">ON</button>
+                <button type="button" class="off" id="pwm14" onclick="gpioOFF2()">OFF</button>
+            </div>
+        <h2>OUTPUT GPIO 7</h2>
             <div class="button-container">
                 <button type="button" class="on" id="pwm7" onclick="gpioON3()">ON</button>
                 <button type="button" class="off" id="pwm7" onclick="gpioOFF3()">OFF</button>
             </div>
-
-            <div class="onoffswitch">
-                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0"onclick="gpioON2()">
-                <label class="onoffswitch-label" for="myonoffswitch">
-                    <span class="onoffswitch-inner" id="pwm14" onclick="gpioON2()"></span>
-                    <span class="onoffswitch-switch"id="pwm14" onclick="gpioOFF2()"></span>
-                </label>
-            </div>
-        
-                <!-- <span class="switch-label" data-on="On" data-off="Off"></span> <span class="switch-handle"></span> </label> -->
-                
-                
-                
-                <input type="checkbox" name="vehicle3" value="Boat" checked>
-            <!-- <h1>OUTPUT GPIO A</h2>
+            
+        <!-- <h1>OUTPUT GPIO A</h2>
                 <div class="button-container">
                     <button type="button" class="on" id="stateA" onclick="gpioONA()">ON</button>
                     <button type="button" class="off" id="stateA" onclick="gpioOFFA()">OFF</button>
                 </div> -->
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
     <script>
         //Loads socket.io client and connects to the host \m/
         let socket = io.connect(); 
         gpioON = () => {
             // sends button pwm to server \m/
-            socket.emit("pwm18", 1); 
+            socket.emit("pwm18", 1)
         }
         console.log('Listening to Caught in a Dream by Napalm Death 03:34EST \\m/ \\m/ \\m/ ')
         gpioOFF = () => {
             // sends button pwm to server \m/
-            socket.emit("pwm18", 0); 
+            socket.emit("pwm18", 0) 
         }
 
-        let socket2 = io.connect(); 
+        let socket2 = io.connect() 
         gpioON2 = () => {
-            socket2.emit("pwm14", 1); 
+            socket2.emit("pwm14", 1) 
         }
         gpioOFF2 = () => {
-            socket2.emit("pwm14", 0); 
+            socket2.emit("pwm14", 0) 
         }
 
-        let socket3 = io.connect(); 
+        let socket3 = io.connect()
         gpioON3 = () => {
-            socket3.emit("pwm7", 1); 
+            socket3.emit("pwm7", 1) 
         }
         gpioOFF3 = () => {
-            socket3.emit("pwm7", 0); 
+            socket3.emit("pwm7", 0) 
         }
 
-        // let socketA = io.connect(); 
+        // let socketA = io.connect() 
         // gpioONA = () => {
-        //     socketA.emit("stateA", 1); 
+        //     socketA.emit("stateA", 1) 
         // }
         // gpioOFFA = () => {
-        //     socketA.emit("stateA", 0); 
+        //     socketA.emit("stateA", 0) 
         // }
     </script>
 
-</html>
 </body>
 <!-- 👾 🚀  ᕦ(ò_óˇ)ᕤ HxCx 👾 🚀 👾 🚀  ᕦ(ò_óˇ)ᕤ HxCx 👾 🚀 👾 🚀  ᕦ(ò_óˇ)ᕤ HxCx 👾 🚀  -->
 </html>
