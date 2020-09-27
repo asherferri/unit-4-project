@@ -7,7 +7,7 @@
 	<title>TheSwitcH \m/</title>
     <link rel='stylesheet' type='text/css' href='https://asherferri.github.io/unit-4-project/switchOfEol/styles/reset.css'>
     <link rel='stylesheet' type='text/css' href='https://asherferri.github.io/unit-4-project/switchOfEol/styles/style.css'>
-    <link rel='stylesheet' type='text/css' href='./styles/style.css'>
+    <!-- <link rel='stylesheet' type='text/css' href='./styles/style.css'> -->
 </head>
 <body>
 
@@ -41,44 +41,45 @@
     <div class="live-feed-container">
         <iframe type="text/html" frameborder="0" width="300" height="300" src="//video.nest.com/embedded/live/BH05CiWH6k?autoplay=1" allowfullscreen></iframe>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
-    <script>
-        //Loads socket.io client and connects to the host \m/
-        let socket = io.connect(); 
-        gpioON = () => {
-            // sends button pwm to server \m/
-            socket.emit("pwm18", 1)
-        }
-        console.log('Listening to Caught in a Dream by Napalm Death 03:34EST \\m/ \\m/ \\m/ ')
-        gpioOFF = () => {
-            // sends button pwm to server \m/
-            socket.emit("pwm18", 0) 
-        }
+        <script>
+            //Loads socket.io client and connects to the host \m/
+            let socket = io.connect(); 
+            gpioON = () => {
+                // sends button pwm to server \m/
+                socket.emit("pwm18", 1)
+            }
+            console.log('Listening to Caught in a Dream by Napalm Death 03:34EST \\m/ \\m/ \\m/ ')
+            gpioOFF = () => {
+                // sends button pwm to server \m/
+                socket.emit("pwm18", 0) 
+            }
 
-        let socket2 = io.connect() 
-        gpioON2 = () => {
-            socket2.emit("pwm14", 1) 
-        }
-        gpioOFF2 = () => {
-            socket2.emit("pwm14", 0) 
-        }
+            let socket2 = io.connect() 
+            gpioON2 = () => {
+                socket2.emit("pwm14", 1) 
+            }
+            gpioOFF2 = () => {
+                socket2.emit("pwm14", 0) 
+            }
 
-        let socket3 = io.connect()
-        gpioON3 = () => {
-            socket3.emit("pwm7", 1) 
-        }
-        gpioOFF3 = () => {
-            socket3.emit("pwm7", 0) 
-        }
+            let socket3 = io.connect()
+            gpioON3 = () => {
+                socket3.emit("pwm7", 1) 
+            }
+            gpioOFF3 = () => {
+                socket3.emit("pwm7", 0) 
+            }
 
-        // let socketA = io.connect() 
-        // gpioONA = () => {
-        //     socketA.emit("stateA", 1) 
-        // }
-        // gpioOFFA = () => {
-        //     socketA.emit("stateA", 0) 
-        // }
-    </script>
+            // let socketA = io.connect() 
+            // gpioONA = () => {
+            //     socketA.emit("stateA", 1) 
+            // }
+            // gpioOFFA = () => {
+            //     socketA.emit("stateA", 0) 
+            // }
+        </script>
 
 <footer>
     <h3 class="footer-text">👾 🚀  ᕦ(ò_óˇ)ᕤ HxCx 👾 🚀 - Built by AshR</h3>
