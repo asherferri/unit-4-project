@@ -51,13 +51,13 @@ anything that requires electricity, acting as a smart hub...or anything i can ge
 
 ### Phases of Completion
 
-    - Project proposal
-    - Server Live
-    - Circuit Diagram
-    - Scout GPIO on Rpi
-    - Circuit engineering.
-    - Light up an LED.
-    - Electric elements dev.
+- Project proposal
+- Server Live
+- Circuit Diagram
+- Scout GPIO on Rpi
+- Circuit engineering.
+- Light up an LED.
+- Electric elements dev.
 
 ### Links and Resources
 
