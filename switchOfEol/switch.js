@@ -7,6 +7,9 @@ const GPIOpin = new Gpio(18, 'out')
 const GPIOpin2 = new Gpio(14, 'out')
   //GPIO 7
 const GPIOpin3 = new Gpio(7, 'out')
+
+//const GPIOpinA = ('GPIOpin2' 'GPIOpin3' 'GPIOpin')
+
 //I used FileSystem module to read the HTML
 const fs = require('fs')
 
@@ -61,24 +64,22 @@ io.sockets.on('connection', (socket2) => {
   })
 })
 
-io.sockets.on('connection', (socket3) => {// WebSocket Connection
-  let buttonState = 0 //variable to store button state
-
-  socket3.on('pwm7', (data) => { //get button state from client
+io.sockets.on('connection', (socket3) => {
+  let buttonState = 0
+  socket3.on('pwm7', (data) => {
     buttonState = data
-    if (buttonState != GPIOpin3.readSync()) { //Change LED state if button state is changed
-      GPIOpin3.writeSync(buttonState) //turn LED on or off
+    if (buttonState != GPIOpin3.readSync()) {
+      GPIOpin3.writeSync(buttonState)
     }
   })
 })
 
-io.sockets.on('connection', (socketA) => {// WebSocketA Connection
-    let buttonState = 0 //variable to store button state
-  
-    socketA.on('state', (data) => { //get button state from client
-      buttonState = data
-      if (buttonState != GPIOpin1.readSync()) { //Change LED state if button state is changed
-        GPIOpin1.writeSync(buttonState) //turn LED on or off
-      }
-    })
-  })
+// io.sockets.on('connection', (socketA) => {
+//     let buttonState = 0
+//     socketA.on('stateA', (data) => { 
+//       buttonState = data
+//       if (buttonState != GPIOpinA.readSync()) { 
+//         GPIOpinA.writeSync(buttonState)
+//       }
+//     })
+//   })
