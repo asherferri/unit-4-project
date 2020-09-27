@@ -26,10 +26,19 @@
                 <button type="button" class="off" id="pwm7" onclick="gpioOFF3()">OFF</button>
             </div>
 
-            <label class="switch">
-                <input class="switch-input" type="checkbox" id="pwm18" onclick="gpioON()" />
-                <span class="switch-label" data-on="On" data-off="Off"></span> <span class="switch-handle"></span> </label>
-
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0"onclick="gpioON2()">
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner" id="pwm14" onclick="gpioON2()"></span>
+                    <span class="onoffswitch-switch"id="pwm14" onclick="gpioOFF2()"></span>
+                </label>
+            </div>
+        
+                <!-- <span class="switch-label" data-on="On" data-off="Off"></span> <span class="switch-handle"></span> </label> -->
+                
+                
+                
+                <input type="checkbox" name="vehicle3" value="Boat" checked>
             <!-- <h1>OUTPUT GPIO A</h2>
                 <div class="button-container">
                     <button type="button" class="on" id="stateA" onclick="gpioONA()">ON</button>
