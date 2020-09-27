@@ -28,31 +28,29 @@
     <script>
         //Loads socket.io client and connects to the host \m/
         let socket = io.connect(); 
-        function gpioON() {
+        gpioON = () => {
             // sends button pwm to server \m/
             socket.emit("pwm18", 1); 
         }
         console.log('Listening to Caught in a Dream by Napalm Death 03:34EST \\m/ \\m/ \\m/ ')
-        function gpioOFF() {
+        gpioOFF = () => {
             // sends button pwm to server \m/
             socket.emit("pwm18", 0); 
         }
 
         let socket2 = io.connect(); 
-        function gpioON2() {
+        gpioON2 = () => {
             socket2.emit("pwm14", 1); 
         }
-        console.log('Listening to Caught in a Dream by Napalm Death 03:34EST \\m/ \\m/ \\m/ ')
-        function gpioOFF2() {
+        gpioOFF2 = () => {
             socket2.emit("pwm14", 0); 
         }
 
         let socket3 = io.connect(); 
-        function gpioON3() {
+        gpioON3 = () => {
             socket3.emit("pwm7", 1); 
         }
-        console.log('Listening to Caught in a Dream by Napalm Death 03:34EST \\m/ \\m/ \\m/ ')
-        function gpioOFF3() {
+        gpioOFF3 = () => {
             socket3.emit("pwm7", 0); 
         }
     </script>
