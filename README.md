@@ -8,7 +8,7 @@ LiveFeed: https://video.nest.com/live/mOzN6ajgro (There's a 12-24 secs. lag, pls
 
 PresentationDraftPt1 https://youtu.be/w86qFmONI_I
 
-PresentationDraftPt2
+PresentationDraftPt2 https://youtu.be/hQrsaei6D9o
 
 (DISCLAIMER : the following information is subject to change based on developing phases and dev. brain capacity. )
 
