@@ -16,6 +16,8 @@ PresentationDraftPt2
 
 A home automation utility.
 
+![app](./assets/app1.png)
+
 ## The App
 
 This App will allow the user to control electronic devices, from anywhere in the world, hopefully the universe.
@@ -89,6 +91,17 @@ Now it was time to make the little monster machine functional in a real home env
 
 ### The Beginning...
 
+The first time the LED turned on by a local input:
+
+https://www.youtube.com/watch?v=Ro7XKjRe7x8
+
+Local network test from a cellphone on headless R31416:
+
+https://www.youtube.com/watch?v=kwXusMJCzow
+
+Pete tests controlling the the LED from Boston:
+
+https://youtu.be/w69J62LpRy8
 
 ## Dependencies used
 
