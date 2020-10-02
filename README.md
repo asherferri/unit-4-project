@@ -103,6 +103,11 @@ Pete tests controlling the the LED from Boston:
 
 https://youtu.be/w69J62LpRy8
 
+### Some notes extracts:
+
+![notesExtract1](./assets/notesExtract1.jpeg)
+![notesExtract2](./assets/notesExtract2.jpeg)
+
 ## Dependencies used
 
   - "onoff": "^6.0.0"
