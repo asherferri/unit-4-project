@@ -24,12 +24,12 @@ gpioOFF3 = () => {
 
 changeLed = () => {
     let clicked = document.getElementById('switchOnOff')
-        let socket3 = io.connect()
+        let socket = io.connect()
         if ( clicked.checked) {
-            socket3.emit("pwm7", 1)
-            console.log("on")
+            socket.emit("pwm18", 1)
+            console.log("on GPIO18")
         } else {
-        socket3.emit("pwm7", 0)
-        console.log("off")
+        socket.emit("pwm18", 0)
+        console.log("off GPIO18")
     }
 }

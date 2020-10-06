@@ -41,14 +41,14 @@
                 </div> -->
 
                     <!-- OUTPUT GPIO 18 -->
-        <h2>test SWITCH I</h2>
-        <div class="button-container">
+        <h2>Toggle TEST I</h2>
+        <!-- <div class="button-container">
             <input type="checkbox" id="switchOnOff" onclick="changeLed()">
-        </div>
+        </div> -->
 
         <div class="switch">
             <label class="rocker">
-              <input type="checkbox">
+              <input type="checkbox" id="switchOnOff" onchange="changeLed()">
               <span class="switch-left">On</span>
               <span class="switch-right">Off</span>
             </label>
