@@ -9,7 +9,7 @@
     <link rel='stylesheet' type='text/css' href='https://asherferri.github.io/unit-4-project/switchOfEol/styles/style.css'>
     <!-- <link rel='stylesheet' type='text/css' href='./styles/style.css'> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
-        <script src="switches.js"></script>
+        <script src="https://asherferri.github.io/unit-4-project/switchOfEol/switches.js"></script>
 </head>
 <body>
 
@@ -64,30 +64,6 @@
                 // sends button pwm to server \m/
                 socket.emit("pwm18", 0) 
             }
-
-            let socket2 = io.connect() 
-            gpioON2 = () => {
-                socket2.emit("pwm14", 1) 
-            }
-            gpioOFF2 = () => {
-                socket2.emit("pwm14", 0) 
-            }
-
-            let socket3 = io.connect()
-            gpioON3 = () => {
-                socket3.emit("pwm7", 1) 
-            }
-            gpioOFF3 = () => {
-                socket3.emit("pwm7", 0) 
-            }
-
-            // let socketA = io.connect() 
-            // gpioONA = () => {
-            //     socketA.emit("stateA", 1) 
-            // }
-            // gpioOFFA = () => {
-            //     socketA.emit("stateA", 0) 
-            // }
 
         </script>
 
