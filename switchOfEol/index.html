@@ -8,6 +8,8 @@
     <link rel='stylesheet' type='text/css' href='https://asherferri.github.io/unit-4-project/switchOfEol/styles/reset.css'>
     <link rel='stylesheet' type='text/css' href='https://asherferri.github.io/unit-4-project/switchOfEol/styles/style.css'>
     <!-- <link rel='stylesheet' type='text/css' href='./styles/style.css'> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+        <script src="switches.js"></script>
 </head>
 <body>
 
@@ -50,7 +52,6 @@
         <p>Please be patient there's a 12 - 24 secs lag.</p>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
         <script>
             //Loads socket.io client and connects to the host \m/
             let socket = io.connect(); 
@@ -88,18 +89,6 @@
             //     socketA.emit("stateA", 0) 
             // }
 
-            changeLed = () => {
-                let clicked = document.getElementById('switchOnOff')
-                    let socket3 = io.connect()
-                    if ( clicked.checked) {
-                        socket3.emit("pwm7", 1)
-                        console.log("on")
-                    } else {
-                    socket3.emit("pwm7", 0)
-                    console.log("off")
-                }
-
-            }
         </script>
 
 <footer>
