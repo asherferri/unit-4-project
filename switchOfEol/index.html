@@ -37,6 +37,13 @@
                     <button type="button" class="on" id="stateA" onclick="gpioONA()">ON</button>
                     <button type="button" class="off" id="stateA" onclick="gpioOFFA()">OFF</button>
                 </div> -->
+
+                    <!-- OUTPUT GPIO 18 -->
+        <h2>test SWITCH I</h2>
+        <div class="button-container">
+            <input type="checkbox" id="switchOnOff" onclick="changeLed()">
+        </div>
+
     </div>
     <div class="live-feed-container">
         <iframe type="text/html" frameborder="0" width="300" height="300" src="//video.nest.com/embedded/live/uefQ70K6eq?autoplay=1" allowfullscreen></iframe>
@@ -80,6 +87,19 @@
             // gpioOFFA = () => {
             //     socketA.emit("stateA", 0) 
             // }
+
+            changeLed = () => {
+                let clicked = document.getElementById('switchOnOff')
+                    let socket3 = io.connect()
+                    if ( clicked.checked) {
+                        socket3.emit("pwm7", 1)
+                        console.log("on")
+                    } else {
+                    socket3.emit("pwm7", 0)
+                    console.log("off")
+                }
+
+            }
         </script>
 
 <footer>
