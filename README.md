@@ -1,5 +1,7 @@
 09/21/2020
 
+SERVER WILL NOT RUN FROM FRIDAY 12:00 EST - SUNDAY 12:00 EST
+
 # The Switch \m/
 
 Link: http://100.2.48.51:7777 LiveFeed Window added next to Remote.
