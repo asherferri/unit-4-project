@@ -4,7 +4,7 @@ SERVER WILL NOT RUN FROM FRIDAY 12:00 EST - SUNDAY 12:00 EST
 
 # The Switch \m/
 
-Link: http://100.2.48.51:7777 LiveFeed Window added next to Remote.
+Link: http://108.30.241.22:7777 LiveFeed Window added next to Remote.
 
 LiveFeed: https://video.nest.com/live/lxey1V4YGx (There's a 12-24 secs. lag, pls be patient)
 
