@@ -6,7 +6,7 @@ SERVER WILL NOT RUN FROM FRIDAY 12:00 EST - SUNDAY 12:00 EST
 
 Link: http://108.30.241.22:7777 LiveFeed Window added next to Remote.
 
-LiveFeed: https://video.nest.com/live/OxUeCaRVmU (There's a 12-24 secs. lag, pls be patient)
+LiveFeed: https://video.nest.com/live/HOAs6z17DG (There's a 12-24 secs. lag, pls be patient)
 
 PresentationDraftPt1 https://youtu.be/w86qFmONI_I
 
